@@ -27,6 +27,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_PEBBLE_0C73EC70F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
+          runtime: 'nodejs20'
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: (link unavailable)
           app_location: "/" # App source code path
@@ -45,3 +46,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_PEBBLE_0C73EC70F }}
           action: "close"
+          runtime: 'nodejs20'
+
